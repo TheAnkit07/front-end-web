@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Study Guide - HTML, CSS & JavaScript</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <button id="themeBtn" onclick="toggleTheme()">🌙 Light </button>
+    <h1>Frontend Study Guide</h1>
+    <p>HTML &nbsp;·&nbsp; CSS &nbsp;·&nbsp; JavaScript</p>
+  </header>
+
+  <nav>
+    <a href="about.html">About</a>
+    <a href="#intro">Introduction</a>
+    <a href="#html">HTML</a>
+    <a href="#css">CSS</a>
+    <a href="#javascript">JavaScript</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#videos">Videos</a>
+  </nav>
+
+  <div class="container">
+    <section id="intro">
+      <h2 class="section-title">What is Frontend Development?</h2>
+      <p class="section-desc">
+        Frontend development means building the part of a website that users can see and interact with —
+        buttons, text, images, menus, forms, and everything else on the screen.
+        Every website is built using three basic technologies: <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.
+        Learning these three is the first step to becoming a web developer.
+      </p>
+      <div class="card-grid">
+        <div class="card"><h3>📄 HTML</h3><p>Stands for HyperText Markup Language. It creates the structure of a page — headings, paragraphs, images, links, and forms. Think of it as the skeleton of a website.</p></div>
+        <div class="card"><h3>🎨 CSS</h3><p>Stands for Cascading Style Sheets. It controls how the HTML looks — colours, fonts, spacing, and layout. Think of it as the clothing and design of a website.</p></div>
+        <div class="card"><h3>⚡ JavaScript</h3><p>A programming language that makes websites interactive. It handles things like clicking buttons, showing alerts, changing content without reloading the page, and much more.</p></div>
+      </div>
+    </section>
+
+    <hr />
+
+
+    <section id="html">
+      <h2 class="section-title">HTML — Building the Structure</h2>
+      <p class="section-desc">HTML uses "tags" to mark up content. Tags are written inside angle brackets like &lt;p&gt; for paragraph, &lt;h1&gt; for heading, &lt;img&gt; for image. Most tags have an opening and a closing tag. HTML5 is the latest version and added many useful new tags.</p>
+      <div class="card-grid">
+        <div class="card"><h3>Basic Tags</h3><p>&lt;h1&gt; to &lt;h6&gt; for headings, &lt;p&gt; for paragraph, &lt;a&gt; for links, &lt;img&gt; for images, &lt;ul&gt; / &lt;li&gt; for lists, &lt;table&gt; for tables.</p></div>
+        <div class="card"><h3>HTML Attributes</h3><p>Tags can have extra information called attributes. For example: &lt;img src="photo.jpg" alt="A photo"&gt; — here src and alt are attributes that give more details to the image tag.</p></div>
+        <div class="card"><h3>Forms</h3><p>Forms let users enter data. The &lt;form&gt; tag contains inputs like &lt;input type="text"&gt;, &lt;input type="email"&gt;, checkboxes, radio buttons, and a submit button.</p></div>
+      </div>
+    </section>
+
+    <hr />
+
+
+    <section id="css">
+      <h2 class="section-title">CSS — Adding Style & Design</h2>
+      <p class="section-desc">CSS is written as rules. Each rule selects an HTML element and sets styles for it. You can change colours, font sizes, margins, padding, backgrounds, borders, and even animations. CSS can be written in a separate .css file or inside a &lt;style&gt; tag in your HTML.</p>
+      <div class="card-grid">
+        <div class="card"><h3>Selectors</h3><p>CSS selects elements to style. You can select by tag name (p), class (.box), or ID (#header). Classes are the most commonly used because they can be reused on many elements.</p></div>
+        <div class="card"><h3>Box Model</h3><p>Every HTML element is a box. It has: content inside, then padding around the content, then a border, then margin on the outside. Understanding this helps you control spacing.</p></div>
+        <div class="card"><h3>Flexbox</h3><p>Flexbox is a CSS layout system that makes it easy to arrange items in a row or column. It helps align things to the center, space them evenly, or make them wrap onto new lines.</p></div>
+      </div>
+    </section>
+
+    <hr />
+
+  
+    <section id="javascript">
+      <h2 class="section-title">JavaScript — Making Things Interactive</h2>
+      <p class="section-desc">JavaScript is a programming language that runs inside the browser. It lets you respond to user actions, update the page content, do calculations, show/hide elements, and much more. You write JS inside a &lt;script&gt; tag in your HTML, or in a separate .js file.</p>
+      <div class="card-grid">
+        <div class="card"><h3>Variables</h3><p>Variables store data. Use <strong>let</strong> for values that can change, and <strong>const</strong> for values that stay the same. Example: let name = "Rahul"; or const age = 20;</p></div>
+        <div class="card"><h3>Functions</h3><p>A function is a block of code that runs when you call it. You define it once and use it as many times as you want. Functions help avoid repeating the same code.</p></div>
+        <div class="card"><h3>DOM — Selecting Elements</h3><p>DOM stands for Document Object Model. Using JavaScript, you can find any element on the page with document.querySelector() and then change its text, style, or content.</p></div>
+      </div>
+    </section>
+
+    <hr />
+
+ 
+    <section id="roadmap">
+      <h2 class="section-title">How to Learn — Step by Step</h2>
+      <p class="section-desc">Follow this order to learn frontend development the right way. Don't skip steps!</p>
+      <ul class="steps">
+        <li><div class="step-num">1</div><p><strong>Start with HTML basics</strong> — Learn the most common tags: headings, paragraphs, links, images, lists, and forms. Build 2–3 simple pages from scratch.</p></li>
+        <li><div class="step-num">2</div><p><strong>Add CSS styling</strong> — Learn selectors, colors, fonts, margins, padding, and borders. Style your HTML pages to make them look nice.</p></li>
+        <li><div class="step-num">3</div><p><strong>Learn CSS layouts</strong> — Study Flexbox and basic Grid. Build a simple responsive layout that works on both mobile and desktop.</p></li>
+        <li><div class="step-num">4</div><p><strong>Learn JavaScript basics</strong> — Variables, if/else, loops, functions, and arrays. Practice small programs like calculators and number guessing games.</p></li>
+        <li><div class="step-num">5</div><p><strong>Learn DOM manipulation</strong> — Select HTML elements with JS, change their content and style, and handle click events. Build a to-do list project.</p></li>
+        <li><div class="step-num">6</div><p><strong>Build projects</strong> — Make a personal portfolio site, a weather app, or a quiz game. Projects show your skills and help you learn much faster.</p></li>
+        <li><div class="step-num">7</div><p><strong>Learn a framework</strong> — Once comfortable with the basics, explore React or Vue.js. These tools make building large websites much easier and faster.</p></li>
+      </ul>
+    </section>
+
+  </div>
+
+ 
+  <div class="container">
+    <section class="video-section" id="videos">
+      <h2 class="video-section-title">📹 Video Library</h2>
+      <p class="video-section-sub">Watch these videos topic by topic to learn better</p>
+
+      <input type="text" id="searchBox" onkeyup="filterVideos()" placeholder="🔍 Search videos..." />
+
+ 
+      <div class="video-cat">
+        <h3 class="video-cat-title">HTML Videos</h3>
+        <div class="video-grid">
+
+          <div class="video-card">
+            <a class="video-thumb" href="https://youtu.be/HcOc7P5BMi4" target="_blank">HTML Full Course for Beginners</a>
+            <div class="video-info">
+              <div class="video-title">HTML Full Course for Beginners</div>
+              <div class="video-meta">Start here · Introduction</div>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <a class="video-thumb" href="https://youtu.be/lw-VOgq7TK0" target="_blank">HTML Tags & Elements Explained</a>
+            <div class="video-info">
+              <div class="video-title">HTML Tags & Elements Explained</div>
+              <div class="video-meta">Tags · Attributes · Structure</div>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <a class="video-thumb" href="https://youtu.be/2O8pkybH6po" target="_blank">HTML Forms & Input Types</a>
+            <div class="video-info">
+              <div class="video-title">HTML Forms & Input Types</div>
+              <div class="video-meta">Forms · Inputs · Validation</div>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <a class="video-thumb" href="https://youtu.be/aNC6LY34yVM" target="_blank">HTML5 Semantic Tags</a>
+            <div class="video-info">
+              <div class="video-title">HTML5 Semantic Tags</div>
+              <div class="video-meta">Semantic HTML · Best Practices</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+ 
+      <div class="video-cat">
+        <h3 class="video-cat-title">CSS Videos</h3>
+        <div class="video-grid">
+
+          <div class="video-card">
+            <a class="video-thumb" href="https://youtu.be/n4R2E7O-Ngo" target="_blank">CSS Full Course for Beginners</a>
+            <div class="video-info">
+              <div class="video-title">CSS Full Course for Beginners</div>
+              <div class="video-meta">Start here · Introduction</div>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <a class="video-thumb" href="https://youtu.be/Xrxd6cEajhM" target="_blank">CSS Box Model & Selectors</a>
+            <div class="video-info">
+              <div class="video-title">CSS Box Model & Selectors</div>
+              <div class="video-meta">Selectors · Box Model · Spacing</div>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <a class="video-thumb" href="https://youtu.be/tN12g5QUIqg" target="_blank">Flexbox Layout - Complete Guide</a>
+            <div class="video-info">
+              <div class="video-title">Flexbox Layout - Complete Guide</div>
+              <div class="video-meta">Layout · Alignment · Row/Column</div>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <a class="video-thumb" href="https://youtu.be/7AgEjgUtho4" target="_blank">Responsive Design & Media Queries</a>
+            <div class="video-info">
+              <div class="video-title">Responsive Design & Media Queries</div>
+              <div class="video-meta">Mobile First · Screen Sizes</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    
+      <div class="video-cat">
+        <h3 class="video-cat-title">JavaScript Videos</h3>
+        <div class="video-grid">
+
+          <div class="video-card">
+            <a class="video-thumb" href="https://youtu.be/Vky1GUmp0KU?si=503P3y_VuTyzWnVG" target="_blank">JavaScript for Beginners</a>
+            <div class="video-info">
+              <div class="video-title">JavaScript for Beginners</div>
+              <div class="video-meta">Start here · Introduction</div>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <a class="video-thumb" href="https://youtu.be/ORCuz7s5cCY" target="_blank">Variables, Functions & Loops</a>
+            <div class="video-info">
+              <div class="video-title">Variables, Functions & Loops</div>
+              <div class="video-meta">Core JS Concepts</div>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <a class="video-thumb" href="https://youtu.be/oxO1Z5L5S4c" target="_blank">DOM Manipulation Tutorial</a>
+            <div class="video-info">
+              <div class="video-title">DOM Manipulation Tutorial</div>
+              <div class="video-meta">Select · Change · Update HTML</div>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <a class="video-thumb" href="https://youtu.be/i_8NQuEAOmg" target="_blank">Events & addEventListener</a>
+            <div class="video-info">
+              <div class="video-title">Events & addEventListener</div>
+              <div class="video-meta">Click · Input · Keyboard Events</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+  </div>
+<BR></BR>
+ <H1 id="qwz">Quiz 🕵️‍♀️</H1></BR>
+  <div class="container">
+    <div id="quiz"></div>
+    <button onclick="checkQuiz()" style="margin-top:16px; background:#c0874e; color:white; border:none; padding:10px 24px; border-radius:6px; font-size:0.95rem; cursor:pointer;">Submit Quiz ✅</button>
+    <div id="quizResult" style="margin-top:14px; font-size:1rem; font-weight:600; color:#5c3d1e;"></div>
+  </div>
+
+  <footer>
+    <p>Frontend Study Guide &nbsp;·&nbsp; HTML · CSS · JavaScript</p>
+    <p style="margin-top: 6px; font-size: 0.78rem; opacity: 0.7;">Made for 1st Year Students</p>
+  </footer>
+
+  <button id="scrollTopBtn" onclick="scrollToTop()" style="display:none; position:fixed; bottom:30px; right:30px; background:#c0874e; color:white; border:none; padding:10px 14px; border-radius:50%; font-size:1.2rem; cursor:pointer;">⬆</button>
+
+  <script src="1.js"></script>
+</body>
+</html>
